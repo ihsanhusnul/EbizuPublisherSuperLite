@@ -31,17 +31,21 @@ pod install
 
 1.2. Xcode with the iOS development kit is required to build an iOS app using Ebizu SDK. For a better experience, we recommend XCode 8 or later
 
-1.3. The SDK requires iOS 8.3 or later.
+1.3. The SDK requires iOS 9.3 or later.
 
 1.4. Open your project in Xcode.
 
-1.5. Copy “EbizuPublisherSuperLite.framework” to your project directory.
+1.5. Copy “EbizuPublisher.framework” to your project directory.
 
 1.6. Make sure to Copy items into destination group's folder is selected.
 
 1.7. Press the Finish button.
 
 1.8. Ensure that you have added to your project the following dependent frameworks:
+```ObjC
+AdSupport.framework
+CoreLocation.framework
+```
 
 ### Code Implementation
 
@@ -56,7 +60,7 @@ Add following code to your AppDelegate.m
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
     [[EbizuManager sharedManager] setDevelopmentMode:YES];
-    [EbizuManager initWithAppID:@"YOUR APP ID"];
+    [EbizuManager initWithAppID:@"YOUR APP ID"launchOptions:launchOptions];
 
     return YES;
 }
@@ -86,4 +90,3 @@ Add following code to your AppDelegate.m
 
 #### Question?
 We’re always happy to help with the code or other questions you might have about the platform! You can email us directly at [developers@ebizu.com](mailto:developers@ebizu.com)
-
