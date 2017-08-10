@@ -18,13 +18,8 @@
 #pragma mark - global method
 + (EbizuManager*)sharedManager;
 
-+ (id)initWithAppID:(NSString *)appID launchOptions:(NSDictionary *)launchOptions;
++ (id)initWithAppID:(NSString *)appID;
 + (void)start;
 + (void)loginWithUser:(EbizuUser *)obj;
-
-
-
-#pragma mark - instance method
-- (void)requestPermission;
 
 @end

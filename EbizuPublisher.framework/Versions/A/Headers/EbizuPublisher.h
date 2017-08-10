@@ -14,6 +14,4 @@
 
 @interface EbizuPublisher : NSObject
 
-+ (NSArray*)loadStorageLocations;
-
 @end
