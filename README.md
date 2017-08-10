@@ -60,7 +60,7 @@ Add following code to your AppDelegate.m
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
     [[EbizuManager sharedManager] setDevelopmentMode:YES];
-    [EbizuManager initWithAppID:@"YOUR APP ID"launchOptions:launchOptions];
+    [EbizuManager initWithAppID:@"YOUR APP ID"];
 
     return YES;
 }
@@ -71,7 +71,6 @@ Add following code to your AppDelegate.m
     #import <EbizuPublisher/EbizuPublisher.h>
 ...
     EbizuUser *user = [[EbizuUser alloc] init];
-    user.userID = @"USER ID";
     user.name = @"USER NAME";
     user.email = @"USER MAIL";
     user.gender = @"female/male";

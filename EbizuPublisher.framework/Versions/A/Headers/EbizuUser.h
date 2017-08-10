@@ -9,7 +9,6 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
-static NSString *kEbizuUserID = @"user_id";
 static NSString *kEbizuUserName = @"name";
 static NSString *kEbizuUserGender = @"gender";
 static NSString *kEbizuUserEmail = @"email";
@@ -19,7 +18,6 @@ static NSString *kEbizuUserDoB = @"dob";
 
 @interface EbizuUser : NSObject
 
-@property (nonatomic,strong) NSString * userID;
 @property (nonatomic,strong) NSString * name;
 @property (nonatomic,strong) NSString * gender;
 @property (nonatomic,strong) NSString * email;

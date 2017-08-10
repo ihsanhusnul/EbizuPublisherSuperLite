@@ -10,7 +10,6 @@
 
 #import "EbizuManager.h"
 #import "EbizuUser.h"
-#import "EbizuStorage.h"
 
 @interface EbizuPublisher : NSObject
 
