@@ -12,13 +12,14 @@
 @interface EbizuManager : NSObject
 
 #pragma mark - properties
-@property (nonatomic, assign) BOOL developmentMode;
+@property (nonatomic, readonly) BOOL developmentMode;
+@property (nonatomic) BOOL debugMode;
 
 
 #pragma mark - global method
 + (EbizuManager*)sharedManager;
 
-+ (id)initWithAppID:(NSString *)appID;
++ (id)initWithAppID:(NSString *)appID withDevelopmentMode:(BOOL)isDevelopment;
 + (void)start;
 + (void)loginWithUser:(EbizuUser *)obj;
 

@@ -59,8 +59,8 @@ Add following code to your AppDelegate.m
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
-    [[EbizuManager sharedManager] setDevelopmentMode:YES];
-    [EbizuManager initWithAppID:@"YOUR APP ID"];
+    [[EbizuManager sharedManager] setDebugMode:YES];
+    [EbizuManager initWithAppID:@"YOUR APP ID" withDevelopmentMode:NO];
 
     return YES;
 }
