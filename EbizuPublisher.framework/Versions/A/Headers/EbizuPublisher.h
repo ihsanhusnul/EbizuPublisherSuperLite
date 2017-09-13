@@ -8,8 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
-#import "EbizuManager.h"
-#import "EbizuUser.h"
+#import <EbizuPublisher/EbizuManager.h>
+#import <EbizuPublisher/EbizuUser.h>
 
 @interface EbizuPublisher : NSObject
 

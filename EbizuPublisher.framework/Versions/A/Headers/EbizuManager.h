@@ -21,6 +21,11 @@
 
 + (id)initWithAppID:(NSString *)appID withDevelopmentMode:(BOOL)isDevelopment;
 + (void)start;
++ (void)stop;
++ (void)enableServiceForThisUser:(BOOL)yesOrNo;
++ (BOOL)isEnableTrackingLocation;
 + (void)loginWithUser:(EbizuUser *)obj;
+
+- (void)initDevice;
 
 @end

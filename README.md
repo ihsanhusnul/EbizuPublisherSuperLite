@@ -80,11 +80,26 @@ Add following code to your AppDelegate.m
     [EbizuManager loginWithUser:user];
 ```
 
-1.3 Start location
+1.3 Start Service
 ```ObjC
     #import <EbizuPublisher/EbizuPublisher.h>
 ...
     [EbizuManager start];
+```
+
+1.4 Stop Service for session
+```ObjC
+    [EbizuManager stop];
+```
+
+1.5 Disable Service or you wanna enable again with set YES
+```ObjC
+    [EbizuManager enableServiceForThisUser:NO];
+```
+
+1.6 Checking State of service
+```ObjC
+    [EbizuManager isEnableTrackingLocation];
 ```
 
 #### Question?
