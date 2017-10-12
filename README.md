@@ -102,5 +102,9 @@ Add following code to your AppDelegate.m
     [EbizuManager isEnableTrackingLocation];
 ```
 
+1.7 Add the 'NSLocationAlwaysUsageDescription' into your .plist and put the explanation like 'Location is required to find out where you are'. this is needed to running location service. set ON the background modes at Capabilities :
+![Screenshot](Screenshot.png)
+This will handled process when app in background.
+
 #### Question?
 We’re always happy to help with the code or other questions you might have about the platform! You can email us directly at [developers@ebizu.com](mailto:developers@ebizu.com)
